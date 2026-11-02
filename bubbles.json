@@ -1,0 +1,23 @@
+[
+  {
+    "file": "bubble-adb.svg",
+    "text": "1. 📱 ADB Installation Instructions",
+    "from": "#00B4DB",
+    "to": "#0083B0",
+    "fontColor": "#FFFFFF"
+  },
+  {
+    "file": "bubble-features.svg",
+    "text": "2. ✨ Features",
+    "from": "#8E2DE2",
+    "to": "#4A00E0",
+    "fontColor": "#FFFFFF"
+  },
+  {
+    "file": "bubble-disclaimer.svg",
+    "text": "3. ⚠️ DISCLAIMER",
+    "from": "#FF0000",
+    "to": "#8B0000",
+    "fontColor": "#FFFFFF"
+  }
+]
