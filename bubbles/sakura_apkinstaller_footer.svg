@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="600" viewBox="0 0 1600 600" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1000" viewBox="0 0 1600 600" preserveAspectRatio="none">
   <style>
     .petal {
       animation: fall linear infinite;
