@@ -24,10 +24,10 @@
     "file": "sakura_apkinstaller_header.svg",
     "template": "templates/sakura.svg.tpl",
     "text": "SideLoad_-_APK_Installer"
-  }
-    {
+  },
+  {
     "file": "sakura_apkinstaller_footer.svg",
     "template": "templates/sakura.svg.tpl",
-    "text": "Developer:%20GamerLaza_%20(Gamertag)%20Arosha%20Silva%20(name)"
+    "text": "Developer: GamerLaza_ (Gamertag) Arosha Silva (name)"
   }
 ]
