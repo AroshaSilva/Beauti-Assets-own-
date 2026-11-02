@@ -1,4 +1,3 @@
-<!-- generate.py (stdlib only) -->
 #!/usr/bin/env python3
 """
 Generate SVG speech bubbles from templates/bubble.svg.tpl + bubbles.json.
