@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="300" viewBox="0 0 1200 300" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="600" viewBox="0 0 1600 600" preserveAspectRatio="none">
   <style>
     .petal {
-      transform-origin: center;
       animation: fall linear infinite;
     }
     @keyframes fall {
       0% {
-        transform: translateY(-20px) translateX(0) rotate(0deg);
+        transform: translateY(-20px) translateX(0);
         opacity: 0;
       }
       10% {
@@ -16,63 +15,50 @@
         opacity: 1;
       }
       100% {
-        transform: translateY(320px) translateX(40px) rotate(360deg);
+        transform: translateY(620px) translateX(30px);
         opacity: 0;
       }
     }
     @keyframes sway {
       0%, 100% { transform: translateX(0); }
-      50% { transform: translateX(15px); }
+      50% { transform: translateX(20px); }
     }
     .sway {
       animation: sway 3s ease-in-out infinite;
     }
+    @media (prefers-reduced-motion: reduce) {
+      .petal, .sway { animation: none; }
+    }
   </style>
 
-  <!-- Petals at staggered positions and delays -->
-  <g class="petal" style="animation-duration: 6s; animation-delay: 0s;">
-    <g class="sway">
-      <path d="M100,0 C105,-8 115,-8 120,0 C115,8 105,8 100,0 Z" fill="#FFC3E7"/>
-    </g>
+  <!-- Petals: pure falling + gentle horizontal sway, no rotation -->
+  <g class="petal" style="animation-duration: 8s; animation-delay: 0s;">
+    <g class="sway"><path d="M120,0 C127,-10 139,-10 146,0 C139,10 127,10 120,0 Z" fill="#FFC3E7"/></g>
   </g>
-  <g class="petal" style="animation-duration: 8s; animation-delay: 1s;">
-    <g class="sway">
-      <path d="M250,0 C255,-7 265,-7 270,0 C265,7 255,7 250,0 Z" fill="#FFB3D9"/>
-    </g>
+  <g class="petal" style="animation-duration: 10s; animation-delay: 1.2s;">
+    <g class="sway"><path d="M320,0 C326,-9 338,-9 344,0 C338,9 326,9 320,0 Z" fill="#FFB3D9"/></g>
   </g>
-  <g class="petal" style="animation-duration: 7s; animation-delay: 2s;">
-    <g class="sway">
-      <path d="M400,0 C406,-9 418,-9 424,0 C418,9 406,9 400,0 Z" fill="#FFD1E8"/>
-    </g>
+  <g class="petal" style="animation-duration: 9s; animation-delay: 2.4s;">
+    <g class="sway"><path d="M520,0 C527,-11 541,-11 548,0 C541,11 527,11 520,0 Z" fill="#FFD1E8"/></g>
   </g>
-  <g class="petal" style="animation-duration: 9s; animation-delay: 0.5s;">
-    <g class="sway">
-      <path d="M550,0 C555,-6 563,-6 568,0 C563,6 555,6 550,0 Z" fill="#FFC3E7"/>
-    </g>
+  <g class="petal" style="animation-duration: 11s; animation-delay: 0.6s;">
+    <g class="sway"><path d="M720,0 C726,-8 736,-8 742,0 C736,8 726,8 720,0 Z" fill="#FFC3E7"/></g>
   </g>
-  <g class="petal" style="animation-duration: 6.5s; animation-delay: 3s;">
-    <g class="sway">
-      <path d="M700,0 C707,-8 719,-8 726,0 C719,8 707,8 700,0 Z" fill="#FFB3D9"/>
-    </g>
+  <g class="petal" style="animation-duration: 8.5s; animation-delay: 3s;">
+    <g class="sway"><path d="M920,0 C928,-10 942,-10 950,0 C942,10 928,10 920,0 Z" fill="#FFB3D9"/></g>
   </g>
-  <g class="petal" style="animation-duration: 7.5s; animation-delay: 1.5s;">
-    <g class="sway">
-      <path d="M850,0 C856,-9 868,-9 874,0 C868,9 856,9 850,0 Z" fill="#FFD1E8"/>
-    </g>
+  <g class="petal" style="animation-duration: 9.5s; animation-delay: 1.8s;">
+    <g class="sway"><path d="M1120,0 C1127,-11 1141,-11 1148,0 C1141,11 1127,11 1120,0 Z" fill="#FFD1E8"/></g>
   </g>
-  <g class="petal" style="animation-duration: 8.5s; animation-delay: 2.5s;">
-    <g class="sway">
-      <path d="M1000,0 C1005,-7 1013,-7 1018,0 C1013,7 1005,7 1000,0 Z" fill="#FFC3E7"/>
-    </g>
+  <g class="petal" style="animation-duration: 10.5s; animation-delay: 2.7s;">
+    <g class="sway"><path d="M1320,0 C1326,-9 1336,-9 1342,0 C1326,9 1336,9 1320,0 Z" fill="#FFC3E7"/></g>
   </g>
-  <g class="petal" style="animation-duration: 6s; animation-delay: 4s;">
-    <g class="sway">
-      <path d="M1100,0 C1105,-8 1115,-8 1120,0 C1115,8 1105,8 1100,0 Z" fill="#FFB3D9"/>
-    </g>
+  <g class="petal" style="animation-duration: 8s; animation-delay: 4.2s;">
+    <g class="sway"><path d="M1520,0 C1526,-10 1538,-10 1544,0 C1538,10 1526,10 1520,0 Z" fill="#FFB3D9"/></g>
   </g>
 
-  <!-- Optional label -->
-  <text x="600" y="270" text-anchor="middle"
-        font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600"
+  <!-- Label centered vertically -->
+  <text x="800" y="300" text-anchor="middle" dominant-baseline="middle"
+        font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="600"
         fill="#B0457A">{{TEXT}}</text>
 </svg>
