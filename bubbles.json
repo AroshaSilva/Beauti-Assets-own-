@@ -19,5 +19,10 @@
     "from": "#FF0000",
     "to": "#8B0000",
     "fontColor": "#FFFFFF"
+  },
+  {
+    "file": "sakura.svg",
+    "template": "templates/sakura.svg.tpl",
+    "text": "🌸 SideLoader"
   }
 ]
