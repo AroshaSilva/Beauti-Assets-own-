@@ -1,0 +1,41 @@
+name: Generate SVG Bubbles
+
+on:
+  push:
+    paths:
+      - "bubbles.json"
+      - "templates/**"
+      - "generate.py"
+      - ".github/workflows/generate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate SVGs
+        run: python generate.py
+
+      - name: Commit generated SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add bubbles/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: regenerate bubbles from bubbles.json"
+            git push
+          fi
