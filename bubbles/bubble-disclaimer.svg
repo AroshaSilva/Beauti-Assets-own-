@@ -1,11 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="100" viewBox="0 0 500 100">
-  <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF0000"/>
-      <stop offset="100%" stop-color="#8B0000"/>
-    </linearGradient>
-  </defs>
-  <path d="M20 10 H480 Q490 10 490 20 V70 Q490 80 480 80 H60 L35 95 L40 80 H20 Q10 80 10 70 V20 Q10 10 20 10 Z" fill="url(#g)"/>
+  <rect x="10" y="10" width="480" height="70" rx="10" ry="10" fill="#FF0000"/>
+  <path d="M60 80 L35 95 L40 80 Z" fill="#FF0000"/>
   <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
         font-family="Segoe UI, Arial, sans-serif" font-size="35" font-weight="600" fill="#FFFFFF">
     3. ⚠️ DISCLAIMER
